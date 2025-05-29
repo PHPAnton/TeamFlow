@@ -1,0 +1,633 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|c:\\users\\gamem\\source\\repos\\teamflow\\teamflow\\clientapp\\src\\store\\authstore.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|solutionrelative:teamflow\\clientapp\\src\\store\\authstore.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|c:\\users\\gamem\\source\\repos\\teamflow\\teamflow\\clientapp\\src\\axios.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|solutionrelative:teamflow\\clientapp\\src\\axios.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|c:\\users\\gamem\\source\\repos\\teamflow\\teamflow\\clientapp\\src\\views\\login.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|solutionrelative:teamflow\\clientapp\\src\\views\\login.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|c:\\users\\gamem\\source\\repos\\teamflow\\teamflow\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|solutionrelative:teamflow\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|c:\\users\\gamem\\source\\repos\\teamflow\\teamflow\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|solutionrelative:teamflow\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|c:\\users\\gamem\\source\\repos\\teamflow\\teamflow\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|solutionrelative:teamflow\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|c:\\users\\gamem\\source\\repos\\teamflow\\teamflow\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|solutionrelative:teamflow\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|c:\\users\\gamem\\source\\repos\\teamflow\\teamflow\\controllers\\projectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|solutionrelative:teamflow\\controllers\\projectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|c:\\users\\gamem\\source\\repos\\teamflow\\teamflow\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|solutionrelative:teamflow\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|c:\\users\\gamem\\source\\repos\\teamflow\\teamflow\\clientapp\\src\\views\\tasks.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|solutionrelative:teamflow\\clientapp\\src\\views\\tasks.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|c:\\users\\gamem\\source\\repos\\teamflow\\teamflow\\models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|solutionrelative:teamflow\\models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|c:\\users\\gamem\\source\\repos\\teamflow\\teamflow\\services\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|solutionrelative:teamflow\\services\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|c:\\users\\gamem\\source\\repos\\teamflow\\teamflow\\clientapp\\src\\router\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|solutionrelative:teamflow\\clientapp\\src\\router\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|c:\\users\\gamem\\source\\repos\\teamflow\\teamflow\\clientapp\\src\\app.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|solutionrelative:teamflow\\clientapp\\src\\app.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|c:\\users\\gamem\\source\\repos\\teamflow\\teamflow\\models\\taskitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|solutionrelative:teamflow\\models\\taskitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|c:\\users\\gamem\\source\\repos\\teamflow\\teamflow\\clientapp\\src\\views\\confirmemail.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|solutionrelative:teamflow\\clientapp\\src\\views\\confirmemail.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|c:\\users\\gamem\\source\\repos\\teamflow\\teamflow\\clientapp\\src\\views\\chat.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|solutionrelative:teamflow\\clientapp\\src\\views\\chat.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|c:\\users\\gamem\\source\\repos\\teamflow\\teamflow\\clientapp\\src\\views\\resetrequest.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|solutionrelative:teamflow\\clientapp\\src\\views\\resetrequest.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|c:\\users\\gamem\\source\\repos\\teamflow\\teamflow\\clientapp\\src\\views\\resetpassword.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|solutionrelative:teamflow\\clientapp\\src\\views\\resetpassword.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|c:\\users\\gamem\\source\\repos\\teamflow\\teamflow\\clientapp\\src\\views\\register.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|solutionrelative:teamflow\\clientapp\\src\\views\\register.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|c:\\users\\gamem\\source\\repos\\teamflow\\teamflow\\clientapp\\src\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|solutionrelative:teamflow\\clientapp\\src\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|c:\\users\\gamem\\source\\repos\\teamflow\\teamflow\\clientapp\\src\\assets\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|solutionrelative:teamflow\\clientapp\\src\\assets\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|c:\\users\\gamem\\source\\repos\\teamflow\\teamflow\\clientapp\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|solutionrelative:teamflow\\clientapp\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|c:\\users\\gamem\\source\\repos\\teamflow\\teamflow\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|solutionrelative:teamflow\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|c:\\users\\gamem\\source\\repos\\teamflow\\teamflow\\data\\teamflowcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|solutionrelative:teamflow\\data\\teamflowcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|c:\\users\\gamem\\source\\repos\\teamflow\\teamflow\\models\\authmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|solutionrelative:teamflow\\models\\authmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|c:\\users\\gamem\\source\\repos\\teamflow\\teamflow\\models\\chatmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|solutionrelative:teamflow\\models\\chatmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|c:\\users\\gamem\\source\\repos\\teamflow\\teamflow\\models\\chatroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|solutionrelative:teamflow\\models\\chatroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|c:\\users\\gamem\\source\\repos\\teamflow\\teamflow\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|solutionrelative:teamflow\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|c:\\users\\gamem\\source\\repos\\teamflow\\teamflow\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|solutionrelative:teamflow\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|c:\\users\\gamem\\source\\repos\\teamflow\\teamflow\\clientapp\\src\\signalr.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|solutionrelative:teamflow\\clientapp\\src\\signalr.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|c:\\users\\gamem\\source\\repos\\teamflow\\teamflow\\clientapp\\src\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|solutionrelative:teamflow\\clientapp\\src\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|c:\\users\\gamem\\source\\repos\\teamflow\\teamflow\\clientapp\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|solutionrelative:teamflow\\clientapp\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|c:\\users\\gamem\\source\\repos\\teamflow\\teamflow\\clientapp\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|solutionrelative:teamflow\\clientapp\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|c:\\users\\gamem\\source\\repos\\teamflow\\teamflow\\clientapp\\src\\components\\helloworld.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|solutionrelative:teamflow\\clientapp\\src\\components\\helloworld.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|c:\\users\\gamem\\source\\repos\\teamflow\\teamflow\\clientapp\\public\\vite.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|solutionrelative:teamflow\\clientapp\\public\\vite.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|c:\\users\\gamem\\source\\repos\\teamflow\\teamflow\\clientapp\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{AA872404-0E83-4894-97A5-C1EADF8B5FE0}|TeamFlow\\TeamFlow.csproj|solutionrelative:teamflow\\clientapp\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 24,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProjectsController.cs",
+              "DocumentMoniker": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\Controllers\\ProjectsController.cs",
+              "RelativeDocumentMoniker": "TeamFlow\\Controllers\\ProjectsController.cs",
+              "ToolTip": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\Controllers\\ProjectsController.cs",
+              "RelativeToolTip": "TeamFlow\\Controllers\\ProjectsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T09:10:23.461Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "App.vue",
+              "DocumentMoniker": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\src\\App.vue",
+              "RelativeDocumentMoniker": "TeamFlow\\ClientApp\\src\\App.vue",
+              "ToolTip": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\src\\App.vue",
+              "RelativeToolTip": "TeamFlow\\ClientApp\\src\\App.vue",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2025-05-28T10:53:09.327Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "main.css",
+              "DocumentMoniker": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\src\\assets\\main.css",
+              "RelativeDocumentMoniker": "TeamFlow\\ClientApp\\src\\assets\\main.css",
+              "ToolTip": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\src\\assets\\main.css",
+              "RelativeToolTip": "TeamFlow\\ClientApp\\src\\assets\\main.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-05-28T10:39:39.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\appsettings.json",
+              "RelativeDocumentMoniker": "TeamFlow\\appsettings.json",
+              "ToolTip": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\appsettings.json",
+              "RelativeToolTip": "TeamFlow\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-28T10:19:52.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ChatHub.cs",
+              "DocumentMoniker": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\Hubs\\ChatHub.cs",
+              "RelativeDocumentMoniker": "TeamFlow\\Hubs\\ChatHub.cs",
+              "ToolTip": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\Hubs\\ChatHub.cs",
+              "RelativeToolTip": "TeamFlow\\Hubs\\ChatHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T10:07:57.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "TeamFlow\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "TeamFlow\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T09:57:45.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "TeamFlow\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\WeatherForecast.cs",
+              "RelativeToolTip": "TeamFlow\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T09:57:27.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TasksController.cs",
+              "DocumentMoniker": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\Controllers\\TasksController.cs",
+              "RelativeDocumentMoniker": "TeamFlow\\Controllers\\TasksController.cs",
+              "ToolTip": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\Controllers\\TasksController.cs",
+              "RelativeToolTip": "TeamFlow\\Controllers\\TasksController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T09:55:20.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Chat.vue",
+              "DocumentMoniker": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\src\\views\\Chat.vue",
+              "RelativeDocumentMoniker": "TeamFlow\\ClientApp\\src\\views\\Chat.vue",
+              "ToolTip": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\src\\views\\Chat.vue",
+              "RelativeToolTip": "TeamFlow\\ClientApp\\src\\views\\Chat.vue",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAwwGgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2025-05-28T09:46:36.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "signalr.js",
+              "DocumentMoniker": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\src\\signalr.js",
+              "RelativeDocumentMoniker": "TeamFlow\\ClientApp\\src\\signalr.js",
+              "ToolTip": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\src\\signalr.js",
+              "RelativeToolTip": "TeamFlow\\ClientApp\\src\\signalr.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-28T09:46:23.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Tasks.vue",
+              "DocumentMoniker": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\src\\views\\Tasks.vue",
+              "RelativeDocumentMoniker": "TeamFlow\\ClientApp\\src\\views\\Tasks.vue",
+              "ToolTip": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\src\\views\\Tasks.vue",
+              "RelativeToolTip": "TeamFlow\\ClientApp\\src\\views\\Tasks.vue",
+              "ViewState": "AgIAAO8AAAAAAAAAAAAgwA8BAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2025-05-28T09:44:52.599Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ResetPassword.vue",
+              "DocumentMoniker": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\src\\views\\ResetPassword.vue",
+              "RelativeDocumentMoniker": "TeamFlow\\ClientApp\\src\\views\\ResetPassword.vue",
+              "ToolTip": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\src\\views\\ResetPassword.vue",
+              "RelativeToolTip": "TeamFlow\\ClientApp\\src\\views\\ResetPassword.vue",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAwwGoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2025-05-28T09:43:57.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ResetRequest.vue",
+              "DocumentMoniker": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\src\\views\\ResetRequest.vue",
+              "RelativeDocumentMoniker": "TeamFlow\\ClientApp\\src\\views\\ResetRequest.vue",
+              "ToolTip": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\src\\views\\ResetRequest.vue",
+              "RelativeToolTip": "TeamFlow\\ClientApp\\src\\views\\ResetRequest.vue",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2025-05-28T09:43:08.243Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ConfirmEmail.vue",
+              "DocumentMoniker": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\src\\views\\ConfirmEmail.vue",
+              "RelativeDocumentMoniker": "TeamFlow\\ClientApp\\src\\views\\ConfirmEmail.vue",
+              "ToolTip": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\src\\views\\ConfirmEmail.vue",
+              "RelativeToolTip": "TeamFlow\\ClientApp\\src\\views\\ConfirmEmail.vue",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAEAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2025-05-28T09:42:39.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Register.vue",
+              "DocumentMoniker": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\src\\views\\Register.vue",
+              "RelativeDocumentMoniker": "TeamFlow\\ClientApp\\src\\views\\Register.vue",
+              "ToolTip": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\src\\views\\Register.vue",
+              "RelativeToolTip": "TeamFlow\\ClientApp\\src\\views\\Register.vue",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAxwHcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2025-05-28T09:42:06.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.vue",
+              "DocumentMoniker": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\src\\views\\Login.vue",
+              "RelativeDocumentMoniker": "TeamFlow\\ClientApp\\src\\views\\Login.vue",
+              "ToolTip": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\src\\views\\Login.vue",
+              "RelativeToolTip": "TeamFlow\\ClientApp\\src\\views\\Login.vue",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAgwGsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2025-05-28T09:41:11.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "index.js",
+              "DocumentMoniker": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\src\\router\\index.js",
+              "RelativeDocumentMoniker": "TeamFlow\\ClientApp\\src\\router\\index.js",
+              "ToolTip": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\src\\router\\index.js",
+              "RelativeToolTip": "TeamFlow\\ClientApp\\src\\router\\index.js",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-28T09:40:42.404Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "main.js",
+              "DocumentMoniker": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\src\\main.js",
+              "RelativeDocumentMoniker": "TeamFlow\\ClientApp\\src\\main.js",
+              "ToolTip": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\src\\main.js",
+              "RelativeToolTip": "TeamFlow\\ClientApp\\src\\main.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-28T09:40:32.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\src\\style.css",
+              "RelativeDocumentMoniker": "TeamFlow\\ClientApp\\src\\style.css",
+              "ToolTip": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\src\\style.css",
+              "RelativeToolTip": "TeamFlow\\ClientApp\\src\\style.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-05-28T09:40:32.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "authStore.js",
+              "DocumentMoniker": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\src\\store\\authStore.js",
+              "RelativeDocumentMoniker": "TeamFlow\\ClientApp\\src\\store\\authStore.js",
+              "ToolTip": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\src\\store\\authStore.js",
+              "RelativeToolTip": "TeamFlow\\ClientApp\\src\\store\\authStore.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-28T09:40:20.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "axios.js",
+              "DocumentMoniker": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\src\\axios.js",
+              "RelativeDocumentMoniker": "TeamFlow\\ClientApp\\src\\axios.js",
+              "ToolTip": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\src\\axios.js",
+              "RelativeToolTip": "TeamFlow\\ClientApp\\src\\axios.js",
+              "ViewState": "AgIAAA8AAAAAAAAAAABDwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-28T09:39:56.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AuthModels.cs",
+              "DocumentMoniker": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\Models\\AuthModels.cs",
+              "RelativeDocumentMoniker": "TeamFlow\\Models\\AuthModels.cs",
+              "ToolTip": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\Models\\AuthModels.cs",
+              "RelativeToolTip": "TeamFlow\\Models\\AuthModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T09:35:32.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "TeamFlow\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "TeamFlow\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAHYAAAAAAAAAAADwv4kAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T09:26:32.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IEmailService.cs",
+              "DocumentMoniker": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\Services\\IEmailService.cs",
+              "RelativeDocumentMoniker": "TeamFlow\\Services\\IEmailService.cs",
+              "ToolTip": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\Services\\IEmailService.cs",
+              "RelativeToolTip": "TeamFlow\\Services\\IEmailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T09:25:17.186Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\README.md",
+              "RelativeDocumentMoniker": "TeamFlow\\ClientApp\\README.md",
+              "ToolTip": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\README.md",
+              "RelativeToolTip": "TeamFlow\\ClientApp\\README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-05-28T09:19:28.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\index.html",
+              "RelativeDocumentMoniker": "TeamFlow\\ClientApp\\index.html",
+              "ToolTip": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\index.html",
+              "RelativeToolTip": "TeamFlow\\ClientApp\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-05-28T09:19:20.983Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\.gitignore",
+              "RelativeDocumentMoniker": "TeamFlow\\ClientApp\\.gitignore",
+              "ToolTip": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\.gitignore",
+              "RelativeToolTip": "TeamFlow\\ClientApp\\.gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVDhPjVNLTgJBEG1lwpoFB3GNK9fieA48hD8iwT/ihwgSDAIHgAGXXsEV18CNzL/LquqZdsYM6kteXqcy3fWqpmpNRBgOhyABBEgpAFVKPIMUcYzUyOU\u002BXM/b2qtU3vkSfRjjZTCAMAw1A2LwzdFoBPP5HNqdzuL27n4juibWI\u002BUshBA1DIkhEx9iEorFotgslQqGYbxxAGFEqt1MxmPWJLbLZdZ\u002Bv89q5PMFPiTR6z2zdaxR0fXA0XTBcVywkb4fwHXjRteecIDNQ7UmExVYAdPcxYaqclN46na5WenMKjtlVnTYwcXlVYaDqImW9beD5N/TeGy32QHXm6hZ03ZgiSQHp2fnWQ4oBmJqWSqwAqZpZjt4aLXAD4J0VqyZsmoubfB8H2r1eoaD6NXZ9HcHO\u002BSA3f4AjifXl8rItOETM8ckB9WTWpYD9RdeZ1PWVWAHWXPQaDb59f/w8LiqHeh1pvGkCaP6qB8yXusoxmuNZ7XmII4O9vGuEF86osuDYRkpYQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-05-28T09:19:20.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "HelloWorld.vue",
+              "DocumentMoniker": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\src\\components\\HelloWorld.vue",
+              "RelativeDocumentMoniker": "TeamFlow\\ClientApp\\src\\components\\HelloWorld.vue",
+              "ToolTip": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\src\\components\\HelloWorld.vue",
+              "RelativeToolTip": "TeamFlow\\ClientApp\\src\\components\\HelloWorld.vue",
+              "ViewState": "AgIAAB4AAAAAAAAAAEBdwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2025-05-28T09:19:09.912Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "vite.svg",
+              "DocumentMoniker": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\public\\vite.svg",
+              "RelativeDocumentMoniker": "TeamFlow\\ClientApp\\public\\vite.svg",
+              "ToolTip": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\public\\vite.svg",
+              "RelativeToolTip": "TeamFlow\\ClientApp\\public\\vite.svg",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKTSURBVDhPjVNLSFRRGP7unTsz9w75uOaMZlMNpo1aFFJRodRGN7UwatMiKgga3JgVRBSNSA8RooUFLRycCCpc9ITIFi0EW\u002BhCW/gONYUcxplsQL13nKv3dM6ZGV\u002BE9N37c\u002B455/\u002B\u002B/7s/5whYA7/fP5L63BSCIDxvbGxsAiEktZQEE6Brm6K1tXWS5TU0NNQyjsiZKQgCBgBChQ2Q\u002BfswpytgDLmg9zihD9XBNJfhcrlstPoeqlVPRS6uCBDy1broLnN29PkxPeaFFmpC79gOdEu9sB8KQRt\u002Bz/NUVbUGAoGpJIfc5j2gZIuv3fam/sCNGrdjGLGwE23hR\u002BiMeBCKAbXlOTgfr0VW9QfqD4iEZ5BIJNAWDI5yB75X0tXqwrc1JZk90MKVUEq/4UplFc4W5UKwiHjaO4tx90NWiYfT5cQuj4dRITLrZfn9104XtOD3\u002BE4z7/BrqIoKZ4YM37E8XNifA4vdiuCIApPzWY9Wmy9h6UfOpd13t89FstEceyF2PJlAfNHkm6y6xSbxcTASpyuMyFT4NoeI6PV6mzEvvIy0oO\u002BXPVGULaMs186jVLVil0zzF\u002BI4ki\u002BnqjP\u002BGgemrp0Z\u002BHn8T0d0nyrOTky\u002B8x0tNoxE0iZrcSqXz5lAcroCcXkeBcGpyzcnowRTDk9xoDuEmbkE5vRlfB6cRcWzIXibv\u002BNTf5ST0y7SEBa6MGIaOFje2VUnZSgPTFECMZM9YCeLde6cdwvuVLlXrVMFWXGAHqRRaUlDezyEic6tlbFBbW/oS8nHbf0RDZIooDDLipPeTJwozIJJH4EIoG/y1/6Fe/5bj6lFousa0WjoWjoWiLYhGNidWHcXDNhOsVGWFSg0ZCUdDigbIo11Zv73Oq8C\u002BAsr5V2IWWNA0gAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-05-28T09:19:02.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "vite.config.js",
+              "DocumentMoniker": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\vite.config.js",
+              "RelativeDocumentMoniker": "TeamFlow\\ClientApp\\vite.config.js",
+              "ToolTip": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\ClientApp\\vite.config.js",
+              "RelativeToolTip": "TeamFlow\\ClientApp\\vite.config.js",
+              "ViewState": "AgIAAAEAAAAAAAAAAIBTwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-28T09:17:18.403Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ChatMessage.cs",
+              "DocumentMoniker": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\Models\\ChatMessage.cs",
+              "RelativeDocumentMoniker": "TeamFlow\\Models\\ChatMessage.cs",
+              "ToolTip": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\Models\\ChatMessage.cs",
+              "RelativeToolTip": "TeamFlow\\Models\\ChatMessage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T08:49:36.845Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ChatRoom.cs",
+              "DocumentMoniker": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\Models\\ChatRoom.cs",
+              "RelativeDocumentMoniker": "TeamFlow\\Models\\ChatRoom.cs",
+              "ToolTip": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\Models\\ChatRoom.cs",
+              "RelativeToolTip": "TeamFlow\\Models\\ChatRoom.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T08:49:19.333Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TaskItem.cs",
+              "DocumentMoniker": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\Models\\TaskItem.cs",
+              "RelativeDocumentMoniker": "TeamFlow\\Models\\TaskItem.cs",
+              "ToolTip": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\Models\\TaskItem.cs",
+              "RelativeToolTip": "TeamFlow\\Models\\TaskItem.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAADwvx8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T08:48:55.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Project.cs",
+              "DocumentMoniker": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\Models\\Project.cs",
+              "RelativeDocumentMoniker": "TeamFlow\\Models\\Project.cs",
+              "ToolTip": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\Models\\Project.cs",
+              "RelativeToolTip": "TeamFlow\\Models\\Project.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T08:48:42.548Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\Models\\User.cs",
+              "RelativeDocumentMoniker": "TeamFlow\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\Models\\User.cs",
+              "RelativeToolTip": "TeamFlow\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T08:48:14.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "TeamFlowContext.cs",
+              "DocumentMoniker": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\Data\\TeamFlowContext.cs",
+              "RelativeDocumentMoniker": "TeamFlow\\Data\\TeamFlowContext.cs",
+              "ToolTip": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\Data\\TeamFlowContext.cs",
+              "RelativeToolTip": "TeamFlow\\Data\\TeamFlowContext.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T08:47:50.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\Program.cs",
+              "RelativeDocumentMoniker": "TeamFlow\\Program.cs",
+              "ToolTip": "C:\\Users\\gamem\\source\\repos\\TeamFlow\\TeamFlow\\Program.cs",
+              "RelativeToolTip": "TeamFlow\\Program.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAADwvyAAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T08:42:53.537Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

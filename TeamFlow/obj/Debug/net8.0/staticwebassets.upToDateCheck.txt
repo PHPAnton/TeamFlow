@@ -1,0 +1,4 @@
+wwwroot\assets\index-DlpPWx-Q.js
+wwwroot\assets\index-lOw24Jnj.css
+wwwroot\index.html
+wwwroot\vite.svg
