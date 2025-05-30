@@ -114,6 +114,8 @@ public class AccountController : ControllerBase
 
     private string GenerateJwtToken(User user)
     {
+        
+
         var claims = new[]
         {
         new Claim(JwtRegisteredClaimNames.Sub, user.Id.ToString()),
@@ -124,14 +126,21 @@ public class AccountController : ControllerBase
         var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
         var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
+        // 🕒 Добавь это:
+        Console.WriteLine("=== Серверное UTC время ===");
+        Console.WriteLine(DateTime.UtcNow);
+        Console.WriteLine("=== Ожидаемая дата истечения токена ===");
+        Console.WriteLine(DateTime.UtcNow.AddHours(12));
+
         var token = new JwtSecurityToken(
             issuer: _config["Jwt:Issuer"],
             audience: _config["Jwt:Audience"],
             claims: claims,
-            expires: DateTime.UtcNow.AddHours(12), // ✅ важный момент!
+            expires: DateTime.UtcNow.AddHours(12),
             signingCredentials: creds);
 
         return new JwtSecurityTokenHandler().WriteToken(token);
     }
+
 
 }

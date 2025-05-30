@@ -32,7 +32,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             IssuerSigningKey = new SymmetricSecurityKey(
                 Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"])),
 
-            ClockSkew = TimeSpan.Zero // 🔥 Убираем доп. "поблажку" в 5 минут (по умолчанию она есть)
+            ClockSkew = TimeSpan.FromMinutes(5) // 🔥 Убираем доп. "поблажку" в 5 минут (по умолчанию она есть)
         };
 
         options.Events = new JwtBearerEvents
@@ -99,6 +99,19 @@ app.UseAuthorization();
 app.MapControllers();
 app.MapHub<ChatHub>("/hubs/chat");
 
+app.UseRouting();
+
+// === Логируем токен ===
+app.Use(async (context, next) =>
+{
+    var authHeader = context.Request.Headers["Authorization"].ToString();
+    Console.WriteLine("=== Запрос пришел с токеном ===");
+    Console.WriteLine(authHeader);
+    await next();
+});
+
+app.UseAuthentication();
+app.UseAuthorization();
 // 6. SPA fallback
 app.UseSpa(spa =>
 {

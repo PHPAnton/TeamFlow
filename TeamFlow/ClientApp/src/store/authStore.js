@@ -3,7 +3,7 @@ import api from '@/axios';
 
 export const token = ref(localStorage.getItem('token') || '');
 
-export const auth = {
+export const auth = { 
     user: null,
 
     async login(email, password) {

@@ -1,9 +1,9 @@
-<template>
+п»ї<template>
     <div>
         <nav>
-            <router-link to="/tasks">Задачи</router-link>
-            <router-link to="/login">Вход</router-link>
-            <router-link to="/register">Регистрация</router-link>
+            <router-link to="/tasks">Р—Р°РґР°С‡Рё</router-link>
+            <router-link to="/login">Р’С…РѕРґ</router-link>
+            <router-link to="/register">Р РµРіРёСЃС‚СЂР°С†РёСЏ</router-link>
         </nav>
         <router-view />
     </div>

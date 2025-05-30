@@ -118,3 +118,4 @@ C:\Users\gamem\source\repos\TeamFlow\TeamFlow\obj\Debug\net8.0\TeamFlow.genrunti
 C:\Users\gamem\source\repos\TeamFlow\TeamFlow\obj\Debug\net8.0\ref\TeamFlow.dll
 C:\Users\gamem\source\repos\TeamFlow\TeamFlow\bin\Debug\net8.0\TeamFlow.staticwebassets.runtime.json
 C:\Users\gamem\source\repos\TeamFlow\TeamFlow\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\gamem\source\repos\TeamFlow\TeamFlow\obj\Debug\net8.0\TeamFlow.sourcelink.json
