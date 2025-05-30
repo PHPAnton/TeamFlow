@@ -456,19 +456,8 @@
             "type": "string",
             "nullable": true
           },
-          "ownerId": {
-            "type": "string",
-            "format": "uuid"
-          },
           "owner": {
             "$ref": "#/components/schemas/User"
-          },
-          "tasks": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/TaskItem"
-            },
-            "nullable": true
           },
           "chatRooms": {
             "type": "array",
@@ -476,6 +465,10 @@
               "$ref": "#/components/schemas/ChatRoom"
             },
             "nullable": true
+          },
+          "ownerId": {
+            "type": "string",
+            "format": "uuid"
           }
         },
         "additionalProperties": false
@@ -565,30 +558,25 @@
           "projectId": {
             "type": "string",
             "format": "uuid"
-          },
-          "project": {
-            "$ref": "#/components/schemas/Project"
           }
         },
         "additionalProperties": false
       },
       "TaskPriority": {
         "enum": [
-          0,
-          1,
-          2
+          "Low",
+          "Medium",
+          "High"
         ],
-        "type": "integer",
-        "format": "int32"
+        "type": "string"
       },
       "TaskStatus": {
         "enum": [
-          0,
-          1,
-          2
+          "New",
+          "InProgress",
+          "Completed"
         ],
-        "type": "integer",
-        "format": "int32"
+        "type": "string"
       },
       "User": {
         "required": [

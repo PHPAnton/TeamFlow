@@ -3,11 +3,16 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
+using System.Text.Json.Serialization;
 using TeamFlow.Data;
-using TeamFlow.Services;
 using TeamFlow.Hubs;
+using TeamFlow.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+
+
+
+
 
 // 1. Подключение к PostgreSQL
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
@@ -60,7 +65,11 @@ builder.Services.AddCors(options =>
 });
 
 builder.Services.AddScoped<IEmailService, DummyEmailService>();
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+    //options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve; // 🔁 решает проблему циклов
+});
 builder.Services.AddSignalR();
 builder.Services.AddEndpointsApiExplorer();
 
@@ -93,11 +102,11 @@ app.UseHttpsRedirection();
 app.UseStaticFiles(); // Для wwwroot
 app.UseRouting();
 app.UseCors();
+
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapControllers();
-app.MapHub<ChatHub>("/hubs/chat");
+
 
 app.UseRouting();
 
@@ -110,8 +119,8 @@ app.Use(async (context, next) =>
     await next();
 });
 
-app.UseAuthentication();
-app.UseAuthorization();
+app.MapControllers();
+app.MapHub<ChatHub>("/hubs/chat");
 // 6. SPA fallback
 app.UseSpa(spa =>
 {

@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace TeamFlow.Models
 {
@@ -9,6 +10,7 @@ namespace TeamFlow.Models
     {
         public Guid Id { get; set; }
 
+        
         [Required]
         public string Title { get; set; } = "";
 
@@ -26,6 +28,8 @@ namespace TeamFlow.Models
 
         public Guid ProjectId { get; set; }
 
-        public Project Project { get; set; } = null!;
+        [JsonIgnore]
+        public Project? Project { get; set; }
+
     }
 }

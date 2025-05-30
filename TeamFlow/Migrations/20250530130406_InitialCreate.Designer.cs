@@ -12,8 +12,8 @@ using TeamFlow.Data;
 namespace TeamFlow.Migrations
 {
     [DbContext(typeof(TeamFlowContext))]
-    [Migration("20250528101403_InitSchema")]
-    partial class InitSchema
+    [Migration("20250530130406_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
