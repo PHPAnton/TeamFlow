@@ -59,42 +59,43 @@
                 <h2>{{ editMode ? 'Редактировать' : 'Создать' }} задачу</h2>
                 <form @submit.prevent="submitForm">
                     <label>Заголовок:</label>
-                    <input v-model="form.title" required />
+                    <input id="title" name="title" v-model="form.title" required />
+
 
                     <label>Описание:</label>
-                    <textarea v-model="form.description"></textarea>
+                    <textarea id="desc" name="description" v-model="form.description"></textarea>
 
                     <label>Проект:</label>
-                    <select v-model="selectedProjectId" @change="loadTasks">
+                    <select id="project" name="project" v-model="selectedProjectId" @change="loadTasks">
                         <option v-for="project in projects" :key="project.id" :value="project.id">
                             {{ project.title }}
                         </option>
                     </select>
 
                     <div class="new-project-input">
-                        <input v-model="newProjectName" placeholder="Новый проект..." />
+                        <input name="newProjectName" v-model="newProjectName" placeholder="Новый проект..." />
                         <button type="button" @click="addProject">Создать</button>
                     </div>
 
                     <label>Приоритет:</label>
-                    <select v-model="form.priority">
+                    <select id="priority" name="priority" v-model="form.priority">
                         <option>Low</option>
                         <option>Medium</option>
                         <option>High</option>
                     </select>
 
                     <label>Статус:</label>
-                    <select v-model="form.status">
+                    <select id="status" name="status" v-model="form.status">
                         <option>New</option>
                         <option>InProgress</option>
                         <option>Completed</option>
                     </select>
 
                     <label>Дедлайн:</label>
-                    <input type="date" v-model="form.deadline" />
+                    <input id="deadline" name="deadline" type="date" v-model="form.deadline" />
 
                     <label>Метки (через запятую):</label>
-                    <input v-model="form.tagsText" placeholder="дизайн, urgent" />
+                    <input id="tags" name="tags" v-model="form.tagsText" placeholder="дизайн, urgent" />
 
                     <div class="form-buttons">
                         <button type="submit">{{ editMode ? 'Сохранить' : 'Создать' }}</button>
@@ -110,6 +111,8 @@
     import { ref, onMounted, computed } from 'vue';
     import draggable from 'vuedraggable';
     import api from '@/axios';
+    
+
 
     const tasks = ref([]);
     const projects = ref([]);
@@ -183,6 +186,7 @@
         form.value = {
             title: '', description: '', status: 'New', priority: 'Medium', deadline: '', tagsText: ''
         };
+        
         showForm.value = true;
     };
 
@@ -231,13 +235,20 @@
         }
     };
 
-    const onDrop = async (event, newStatus) => {
+    const onDrop = async (newStatus, event) => {
         const movedTask = event.moved?.element;
         if (!movedTask || movedTask.status === newStatus) return;
 
-        movedTask.status = newStatus;
-        await api.put(`/tasks/${movedTask.id}`, movedTask);
-        await loadTasks();
+        try {
+            await api.put(`/tasks/${movedTask.id}`, {
+                ...movedTask,
+                status: newStatus,
+            });
+            await loadTasks();
+        } catch (err) {
+            console.error('Ошибка при обновлении задачи:', err);
+            alert('Не удалось обновить статус задачи.');
+        }
     };
 
     const addProject = async () => {
@@ -273,6 +284,40 @@
         margin: 0 auto;
         color: white;
     }
+    .modal-overlay {
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.75);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+
+    .modal {
+        background: #1e1e2f;
+        color: #ffffff;
+        padding: 24px;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 500px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        animation: fadeIn 0.3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: scale(0.97);
+        }
+
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    
 
     .header {
         display: flex;
@@ -344,24 +389,6 @@
         cursor: pointer;
     }
 
-    .modal-overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: #000000aa;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .modal {
-        background: #1e1e2f;
-        padding: 20px;
-        border-radius: 8px;
-        width: 400px;
-    }
 
     label {
         display: block;

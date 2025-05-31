@@ -1,4 +1,5 @@
 ﻿import { createRouter, createWebHistory } from 'vue-router';
+import Welcome from '@/views/Welcome.vue';
 import Login from '@/views/Login.vue';
 import Register from '@/views/Register.vue';
 import ConfirmEmail from '@/views/ConfirmEmail.vue';
@@ -8,7 +9,7 @@ import Tasks from '@/views/Tasks.vue';
 import { auth } from '@/store/authStore';
 
 const routes = [
-    { path: '/', redirect: '/login' },
+    { path: '/', component: Welcome },
     { path: '/login', component: Login },
     { path: '/register', component: Register },
     { path: '/confirm', component: ConfirmEmail },

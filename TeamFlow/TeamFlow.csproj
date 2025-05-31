@@ -21,6 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="ClientApp\src\views\icons\" />
     <Folder Include="Services\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>

@@ -47,12 +47,14 @@ export default {
 
 <style scoped>
     .login-container {
-        max-width: 400px;
-        margin: 60px auto;
-        padding: 30px;
-        background: #1e1e2f;
-        border-radius: 8px;
-        box-shadow: 0 0 10px #00000033;
+        max-width: 420px;
+        margin: 80px auto;
+        padding: 40px;
+        background: rgba(30, 30, 47, 0.95);
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        color: #f1f1f1;
+        backdrop-filter: blur(10px);
     }
 
     h1 {

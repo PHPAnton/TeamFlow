@@ -1,4 +1,6 @@
 ﻿import { HubConnectionBuilder, LogLevel } from '@microsoft/signalr';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 let connection;
 
