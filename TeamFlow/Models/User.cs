@@ -5,6 +5,7 @@ namespace TeamFlow.Models
     public class User
     {
         public Guid Id { get; set; }
+        public ICollection<ProjectMember> ProjectMemberships { get; set; } = new List<ProjectMember>();
 
         [Required, MaxLength(100)]
         public string Username { get; set; } = null!;
@@ -19,6 +20,8 @@ namespace TeamFlow.Models
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public bool IsEmailConfirmed { get; set; } = false;
+        public DateTime? EmailTokenExpires { get; set; }
+
         public string? EmailConfirmationToken { get; set; }
 
         public string? PasswordResetToken { get; set; }

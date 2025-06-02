@@ -7,6 +7,8 @@ namespace TeamFlow.Models
     {
         public Guid Id { get; set; }
 
+        public ICollection<ProjectMember> Members { get; set; } = new List<ProjectMember>();
+
         [Required, MaxLength(200)]
         public string Title { get; set; } = null!;
 

@@ -7,17 +7,38 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <router-link class="nav-link text-light" to="/login">Вход</router-link>
-                    </li>
-                    <li class="nav-item">
-                        <router-link class="nav-link text-light" to="/register">Регистрация</router-link>
-                    </li>
+                    <template v-if="isAuthenticated">
+                        <li class="nav-item d-flex align-items-center">
+                            <span class="nav-link text-light">Привет, <b>{{ username }}</b>!</span>
+                            <button class="btn btn-link nav-link text-danger" @click="logout" style="padding:0 12px;">Выйти</button>
+                        </li>
+                    </template>
+                    <template v-else>
+                        <li class="nav-item">
+                            <router-link class="nav-link text-light" to="/login">Вход</router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link class="nav-link text-light" to="/register">Регистрация</router-link>
+                        </li>
+                    </template>
                 </ul>
             </div>
         </div>
     </nav>
 </template>
+
+<script setup>
+import { computed } from 'vue'
+import { auth } from '@/store/authStore'
+
+const isAuthenticated = computed(() => auth.isAuthenticated())
+const username = computed(() => auth.user.value?.username || auth.user.value?.email || 'Пользователь')
+
+function logout() {
+    auth.logout()
+    window.location.href = '/login'
+}
+</script>
 
 <style scoped>
     .navbar-nav .nav-link {
@@ -31,5 +52,4 @@
             color: #4a90e2;
             background-color: transparent !important;
         }
-
 </style>

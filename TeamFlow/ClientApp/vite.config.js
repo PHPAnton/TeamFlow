@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite'
+﻿import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import path from 'path'
 
@@ -10,6 +10,8 @@ export default defineConfig({
         },
     },
     server: {
+
+        historyApiFallback: true, // ✅ Добавить сюда!
         proxy: {
             '/api': {
                 target: 'https://localhost:5001',
@@ -25,7 +27,7 @@ export default defineConfig({
         },
     },
     build: {
-        outDir: '../wwwroot',
-        emptyOutDir: true,
-    },
+        outDir: '../wwwroot', // это будет ClientApp/dist
+        emptyOutDir: true
+    }
 })

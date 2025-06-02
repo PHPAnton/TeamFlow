@@ -160,6 +160,201 @@
         }
       }
     },
+    "/api/ProjectMembers/{projectId}": {
+      "get": {
+        "tags": [
+          "ProjectMembers"
+        ],
+        "parameters": [
+          {
+            "name": "projectId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ProjectMembers/{projectId}/add": {
+      "post": {
+        "tags": [
+          "ProjectMembers"
+        ],
+        "parameters": [
+          {
+            "name": "projectId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddMemberRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddMemberRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddMemberRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ProjectMembers/accept-invite/{inviteId}": {
+      "post": {
+        "tags": [
+          "ProjectMembers"
+        ],
+        "parameters": [
+          {
+            "name": "inviteId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AcceptInviteRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AcceptInviteRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AcceptInviteRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/invites/{inviteId}": {
+      "get": {
+        "tags": [
+          "ProjectMembers"
+        ],
+        "parameters": [
+          {
+            "name": "inviteId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ProjectMembers/{projectMemberId}/role": {
+      "post": {
+        "tags": [
+          "ProjectMembers"
+        ],
+        "parameters": [
+          {
+            "name": "projectMemberId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangeRoleRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangeRoleRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangeRoleRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ProjectMembers/{projectMemberId}": {
+      "delete": {
+        "tags": [
+          "ProjectMembers"
+        ],
+        "parameters": [
+          {
+            "name": "projectMemberId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Projects": {
       "get": {
         "tags": [
@@ -347,6 +542,42 @@
   },
   "components": {
     "schemas": {
+      "AcceptInviteRequest": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AddMemberRequest": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "role": {
+            "$ref": "#/components/schemas/ProjectRole"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ChangeRoleRequest": {
+        "type": "object",
+        "properties": {
+          "role": {
+            "$ref": "#/components/schemas/ProjectRole"
+          }
+        },
+        "additionalProperties": false
+      },
       "ChatMessage": {
         "required": [
           "content"
@@ -447,6 +678,13 @@
             "type": "string",
             "format": "uuid"
           },
+          "members": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProjectMember"
+            },
+            "nullable": true
+          },
           "title": {
             "maxLength": 200,
             "minLength": 1,
@@ -472,6 +710,45 @@
           }
         },
         "additionalProperties": false
+      },
+      "ProjectMember": {
+        "required": [
+          "projectId",
+          "userId"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "projectId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "userId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "role": {
+            "$ref": "#/components/schemas/ProjectRole"
+          },
+          "project": {
+            "$ref": "#/components/schemas/Project"
+          },
+          "user": {
+            "$ref": "#/components/schemas/User"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProjectRole": {
+        "enum": [
+          "Member",
+          "Manager",
+          "Owner"
+        ],
+        "type": "string"
       },
       "RegisterRequest": {
         "type": "object",
@@ -558,6 +835,11 @@
           "projectId": {
             "type": "string",
             "format": "uuid"
+          },
+          "assignedUserId": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -590,6 +872,13 @@
             "type": "string",
             "format": "uuid"
           },
+          "projectMemberships": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProjectMember"
+            },
+            "nullable": true
+          },
           "username": {
             "maxLength": 100,
             "minLength": 1,
@@ -614,6 +903,11 @@
           },
           "isEmailConfirmed": {
             "type": "boolean"
+          },
+          "emailTokenExpires": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
           },
           "emailConfirmationToken": {
             "type": "string",

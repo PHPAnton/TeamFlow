@@ -64,7 +64,9 @@ builder.Services.AddCors(options =>
               .AllowCredentials());
 });
 
-builder.Services.AddScoped<IEmailService, DummyEmailService>();
+builder.Services.AddScoped<IEmailService, SmtpEmailService>();
+
+
 builder.Services.AddControllers().AddJsonOptions(options =>
 {
     options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
@@ -98,6 +100,7 @@ else
     app.UseSpaStaticFiles(); // Только в продакшене
 }
 
+
 app.UseHttpsRedirection();
 app.UseStaticFiles(); // Для wwwroot
 app.UseRouting();
@@ -120,6 +123,7 @@ app.Use(async (context, next) =>
 });
 
 app.MapControllers();
+app.MapFallbackToFile("index.html");
 app.MapHub<ChatHub>("/hubs/chat");
 // 6. SPA fallback
 app.UseSpa(spa =>
@@ -132,5 +136,6 @@ app.UseSpa(spa =>
         // Никакого proxy тут не нужно
     }
 });
+
 
 app.Run();

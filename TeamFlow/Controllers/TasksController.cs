@@ -4,8 +4,6 @@ using Microsoft.EntityFrameworkCore;
 using TeamFlow.Data;
 using TeamFlow.Models;
 
-namespace TeamFlow.Controllers;
-
 [ApiController]
 [Route("api/[controller]")]
 [Authorize]
@@ -23,12 +21,40 @@ public class TasksController : ControllerBase
     {
         var userId = User.FindFirst("id")?.Value;
         if (userId == null) return Unauthorized();
-
         var guid = Guid.Parse(userId);
+
+        // Задачи всех проектов, где юзер участник
+        var userProjectIds = await _db.ProjectMembers
+            .Where(pm => pm.UserId == guid)
+            .Select(pm => pm.ProjectId)
+            .ToListAsync();
 
         var tasks = await _db.TaskItems
             .Include(t => t.Project)
-            .Where(t => t.Project.OwnerId == guid)
+            .Include(t => t.AssignedUser)
+            .Where(t => userProjectIds.Contains(t.ProjectId))
+            .Select(t => new {
+                t.Id,
+                t.Title,
+                t.Description,
+                t.Status,
+                t.Priority,
+                t.Deadline,
+                t.CreatedAt,
+                t.Tags,
+                Project = new
+                {
+                    t.Project.Id,
+                    t.Project.Title
+                },
+                AssignedUser = t.AssignedUser == null ? null : new
+                {
+                    t.AssignedUser.Id,
+                    t.AssignedUser.Username,
+                    t.AssignedUser.Email
+                },
+                t.AssignedUserId
+            })
             .ToListAsync();
 
         return Ok(tasks);
@@ -38,44 +64,27 @@ public class TasksController : ControllerBase
     public async Task<IActionResult> Create([FromBody] TaskItem model)
     {
         if (!ModelState.IsValid)
-        {
-            foreach (var kv in ModelState)
-            {
-                Console.WriteLine($"Key: {kv.Key}");
-                foreach (var err in kv.Value.Errors)
-                {
-                    Console.WriteLine($"  Error: {err.ErrorMessage}");
-                }
-            }
             return BadRequest(ModelState);
-        }
 
-        // Генерация ID и даты создания
         model.Id = Guid.NewGuid();
         model.CreatedAt = DateTime.UtcNow;
 
-        // Преобразуем дедлайн в UTC
+        // Дедлайн в UTC
         if (model.Deadline.HasValue)
             model.Deadline = DateTime.SpecifyKind(model.Deadline.Value, DateTimeKind.Utc);
 
-        // Логирование
-        Console.WriteLine("==== Полученные данные задачи ====");
-        Console.WriteLine($"Title: {model.Title}");
-        Console.WriteLine($"ProjectId: {model.ProjectId}");
-        Console.WriteLine($"Priority: {model.Priority}");
-        Console.WriteLine($"Status: {model.Status}");
-        Console.WriteLine($"Tags: {string.Join(", ", model.Tags ?? new List<string>())}");
-
         // Проверка проекта
         var project = await _db.Projects.FindAsync(model.ProjectId);
-        if (project == null)
-        {
-            Console.WriteLine("❌ Проект не найден");
-            return BadRequest("Проект не найден");
-        }
+        if (project == null) return BadRequest("Проект не найден");
 
-        // Убираем Project чтобы избежать ошибок EF
-        model.Project = null;
+        model.Project = null; // чтобы EF не ругался
+
+        // --- если AssignedUserId не передан, назначаем текущего пользователя ---
+        if (model.AssignedUserId == null || model.AssignedUserId == Guid.Empty)
+        {
+            var userId = User.FindFirst("id")?.Value;
+            if (userId != null) model.AssignedUserId = Guid.Parse(userId);
+        }
 
         _db.TaskItems.Add(model);
         await _db.SaveChangesAsync();
@@ -100,6 +109,9 @@ public class TasksController : ControllerBase
             task.Deadline = null;
 
         task.Tags = model.Tags;
+
+        // --- Обновление AssignedUserId ---
+        task.AssignedUserId = model.AssignedUserId;
 
         await _db.SaveChangesAsync();
         return Ok(task);
