@@ -22,6 +22,35 @@ namespace TeamFlow.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("ProjectInvite", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<bool>("Accepted")
+                        .HasColumnType("boolean");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<Guid>("ProjectId")
+                        .HasColumnType("uuid");
+
+                    b.Property<int>("Role")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProjectId");
+
+                    b.ToTable("ProjectInvites");
+                });
+
             modelBuilder.Entity("TeamFlow.Models.ChatMessage", b =>
                 {
                     b.Property<Guid>("Id")
@@ -94,10 +123,37 @@ namespace TeamFlow.Migrations
                     b.ToTable("Projects");
                 });
 
+            modelBuilder.Entity("TeamFlow.Models.ProjectMember", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("ProjectId")
+                        .HasColumnType("uuid");
+
+                    b.Property<int>("Role")
+                        .HasColumnType("integer");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProjectId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("ProjectMembers");
+                });
+
             modelBuilder.Entity("TeamFlow.Models.TaskItem", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid?>("AssignedUserId")
                         .HasColumnType("uuid");
 
                     b.Property<DateTime>("CreatedAt")
@@ -126,14 +182,11 @@ namespace TeamFlow.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<Guid?>("UserId")
-                        .HasColumnType("uuid");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("ProjectId");
+                    b.HasIndex("AssignedUserId");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("ProjectId");
 
                     b.ToTable("TaskItem");
                 });
@@ -153,6 +206,9 @@ namespace TeamFlow.Migrations
 
                     b.Property<string>("EmailConfirmationToken")
                         .HasColumnType("text");
+
+                    b.Property<DateTime?>("EmailTokenExpires")
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<bool>("IsEmailConfirmed")
                         .HasColumnType("boolean");
@@ -179,6 +235,17 @@ namespace TeamFlow.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("ProjectInvite", b =>
+                {
+                    b.HasOne("TeamFlow.Models.Project", "Project")
+                        .WithMany()
+                        .HasForeignKey("ProjectId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Project");
                 });
 
             modelBuilder.Entity("TeamFlow.Models.ChatMessage", b =>
@@ -222,17 +289,38 @@ namespace TeamFlow.Migrations
                     b.Navigation("Owner");
                 });
 
+            modelBuilder.Entity("TeamFlow.Models.ProjectMember", b =>
+                {
+                    b.HasOne("TeamFlow.Models.Project", "Project")
+                        .WithMany("Members")
+                        .HasForeignKey("ProjectId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("TeamFlow.Models.User", "User")
+                        .WithMany("ProjectMemberships")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Project");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("TeamFlow.Models.TaskItem", b =>
                 {
+                    b.HasOne("TeamFlow.Models.User", "AssignedUser")
+                        .WithMany("AssignedTasks")
+                        .HasForeignKey("AssignedUserId");
+
                     b.HasOne("TeamFlow.Models.Project", "Project")
                         .WithMany("Tasks")
                         .HasForeignKey("ProjectId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("TeamFlow.Models.User", null)
-                        .WithMany("AssignedTasks")
-                        .HasForeignKey("UserId");
+                    b.Navigation("AssignedUser");
 
                     b.Navigation("Project");
                 });
@@ -246,6 +334,8 @@ namespace TeamFlow.Migrations
                 {
                     b.Navigation("ChatRooms");
 
+                    b.Navigation("Members");
+
                     b.Navigation("Tasks");
                 });
 
@@ -256,6 +346,8 @@ namespace TeamFlow.Migrations
                     b.Navigation("Messages");
 
                     b.Navigation("OwnedProjects");
+
+                    b.Navigation("ProjectMemberships");
                 });
 #pragma warning restore 612, 618
         }

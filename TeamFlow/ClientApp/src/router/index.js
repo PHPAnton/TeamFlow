@@ -6,7 +6,9 @@ import ConfirmEmail from '@/views/ConfirmEmail.vue';
 import ResetRequest from '@/views/ResetRequest.vue';
 import ResetPassword from '@/views/ResetPassword.vue';
 import Tasks from '@/views/Tasks.vue';
+import Invite from '@/views/Invite.vue'; // новый импорт
 import { auth } from '@/store/authStore';
+
 
 const routes = [
     { path: '/', component: Welcome },
@@ -16,6 +18,7 @@ const routes = [
     { path: '/reset', component: ResetRequest },
     { path: '/reset-password', component: ResetPassword },
     { path: '/tasks', component: Tasks, meta: { requiresAuth: true } },
+    { path: '/invite/:inviteId', component: Invite }, // новый роут для приглашения
 ];
 
 const router = createRouter({
@@ -23,7 +26,13 @@ const router = createRouter({
     routes,
 });
 
+// Глобальный навигейшн гард для приватных страниц
 router.beforeEach((to, from, next) => {
+    // Страницу приглашения пропускаем всегда!
+    if (to.path.startsWith('/invite')) {
+        next();
+        return;
+    }
     if (to.meta.requiresAuth && !auth.isAuthenticated()) {
         next('/login');
     } else {

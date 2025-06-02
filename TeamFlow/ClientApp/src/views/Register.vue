@@ -39,7 +39,9 @@
                 email: email.value,
                 password: password.value,
             });
-            success.value = 'Письмо с подтверждением отправлено на email';
+
+            
+            router.push(`/confirm?email=${encodeURIComponent(email.value)}`);
         } catch (err) {
             error.value =
                 err.response?.data?.message ||

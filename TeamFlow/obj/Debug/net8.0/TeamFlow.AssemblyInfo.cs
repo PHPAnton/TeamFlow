@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TeamFlow")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3abdac03d717214d3314e82246daa693304020c6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7f78c85ad78478fcf7362493f4c1914c37692645")]
 [assembly: System.Reflection.AssemblyProductAttribute("TeamFlow")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TeamFlow")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

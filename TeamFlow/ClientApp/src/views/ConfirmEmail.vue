@@ -8,37 +8,36 @@
     </div>
 </template>
 
-<script>
-import { onMounted, ref } from 'vue';
-import { useRoute } from 'vue-router';
-import api from '@/axios';
+<script setup>
+    import { useRoute } from 'vue-router';
+    import { ref, onMounted } from 'vue';
+    import api from '@/axios';
 
-export default {
-  setup() {
     const route = useRoute();
+    const email = ref(route.query.email || ''); // 👈 показываем адрес
     const success = ref(false);
     const loading = ref(true);
 
     onMounted(async () => {
-      const token = route.query.token;
-      if (!token) {
-        loading.value = false;
-        return;
-      }
+        console.log('ConfirmEmail loaded');
+        const token = route.query.token;
+        console.log('Token:', token);
 
-      try {
-        await api.post('/account/confirm', { token });
-        success.value = true;
-      } catch (err) {
-        success.value = false;
-      } finally {
-        loading.value = false;
-      }
+        if (!token) return;
+
+        try {
+            const response = await api.post('/account/confirm', { token });
+            console.log('✅ Success:', response.data);
+            success.value = true;
+        } catch (err) {
+            console.error('❌ Confirmation failed:', err);
+            success.value = false;
+        } finally {
+            loading.value = false;
+        }
     });
 
-    return { success, loading };
-  },
-};
+
 </script>
 
 <style scoped>

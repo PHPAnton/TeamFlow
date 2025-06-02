@@ -80,6 +80,117 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "TeamFlow.Controllers.ProjectMembersController",
+    "Method": "GetInvite",
+    "RelativePath": "api/invites/{inviteId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inviteId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TeamFlow.Controllers.ProjectMembersController",
+    "Method": "GetMembers",
+    "RelativePath": "api/ProjectMembers/{projectId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "projectId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TeamFlow.Controllers.ProjectMembersController",
+    "Method": "AddMember",
+    "RelativePath": "api/ProjectMembers/{projectId}/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "projectId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "req",
+        "Type": "TeamFlow.Controllers.ProjectMembersController\u002BAddMemberRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TeamFlow.Controllers.ProjectMembersController",
+    "Method": "RemoveMember",
+    "RelativePath": "api/ProjectMembers/{projectMemberId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "projectMemberId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TeamFlow.Controllers.ProjectMembersController",
+    "Method": "ChangeRole",
+    "RelativePath": "api/ProjectMembers/{projectMemberId}/role",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "projectMemberId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "req",
+        "Type": "TeamFlow.Controllers.ProjectMembersController\u002BChangeRoleRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TeamFlow.Controllers.ProjectMembersController",
+    "Method": "AcceptInvite",
+    "RelativePath": "api/ProjectMembers/accept-invite/{inviteId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inviteId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "req",
+        "Type": "TeamFlow.Controllers.ProjectMembersController\u002BAcceptInviteRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "TeamFlow.Controllers.ProjectsController",
     "Method": "Get",
     "RelativePath": "api/Projects",
@@ -106,7 +217,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TeamFlow.Controllers.TasksController",
+    "ContainingType": "TasksController",
     "Method": "Get",
     "RelativePath": "api/Tasks",
     "HttpMethod": "GET",
@@ -116,7 +227,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TeamFlow.Controllers.TasksController",
+    "ContainingType": "TasksController",
     "Method": "Create",
     "RelativePath": "api/Tasks",
     "HttpMethod": "POST",
@@ -132,7 +243,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TeamFlow.Controllers.TasksController",
+    "ContainingType": "TasksController",
     "Method": "Update",
     "RelativePath": "api/Tasks/{id}",
     "HttpMethod": "PUT",
@@ -153,7 +264,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TeamFlow.Controllers.TasksController",
+    "ContainingType": "TasksController",
     "Method": "Delete",
     "RelativePath": "api/Tasks/{id}",
     "HttpMethod": "DELETE",

@@ -8,6 +8,7 @@ using System.Text;
 using TeamFlow.Data;
 using TeamFlow.Models;
 using TeamFlow.Services;
+using System.Security.Cryptography;
 
 namespace TeamFlow.Controllers;
 
@@ -40,13 +41,13 @@ public class AccountController : ControllerBase
             Username = model.Username,
             Email = model.Email,
             PasswordHash = BCrypt.Net.BCrypt.HashPassword(model.Password),
-            EmailConfirmationToken = Guid.NewGuid().ToString()
+            EmailConfirmationToken = Convert.ToBase64String(RandomNumberGenerator.GetBytes(32)),
         };
 
         _db.Users.Add(user);
         await _db.SaveChangesAsync();
 
-        var confirmLink = $"https://localhost:5173/confirm?token={user.EmailConfirmationToken}";
+        var confirmLink = $"https://localhost:7143/confirm?token={Uri.EscapeDataString(user.EmailConfirmationToken)}";
         await _email.SendAsync(model.Email, "Подтверждение Email", $"Перейдите по ссылке: {confirmLink}");
 
         return Ok(new { message = "Пользователь создан. Подтвердите почту." });
@@ -55,11 +56,21 @@ public class AccountController : ControllerBase
     [HttpPost("confirm")]
     public async Task<IActionResult> ConfirmEmail([FromBody] ConfirmEmailRequest model)
     {
-        var user = await _db.Users.FirstOrDefaultAsync(u => u.EmailConfirmationToken == model.Token);
-        if (user == null) return BadRequest("Неверный токен");
+        if (string.IsNullOrWhiteSpace(model.Token))
+            return BadRequest("Токен не должен быть пустым");
+
+        var user = await _db.Users.FirstOrDefaultAsync(u =>
+            u.EmailConfirmationToken == model.Token);
+
+        if (user == null)
+            return BadRequest("Неверный или просроченный токен");
+
+        if (user.IsEmailConfirmed)
+            return BadRequest("Email уже подтверждён");
 
         user.IsEmailConfirmed = true;
         user.EmailConfirmationToken = null;
+
         await _db.SaveChangesAsync();
 
         return Ok(new { message = "Email подтверждён" });
@@ -89,7 +100,7 @@ public class AccountController : ControllerBase
         user.PasswordResetTokenExpiration = DateTime.UtcNow.AddMinutes(30);
         await _db.SaveChangesAsync();
 
-        var link = $"https://localhost:5173/reset?token={user.PasswordResetToken}";
+        var link = $"https://localhost:7143/reset-password?token={user.PasswordResetToken}";
         await _email.SendAsync(model.Email, "Сброс пароля", $"Сбросить пароль: {link}");
 
         return Ok(new { message = "Ссылка отправлена" });
